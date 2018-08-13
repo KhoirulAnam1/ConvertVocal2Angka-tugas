@@ -14,8 +14,12 @@ import java.util.Locale;
 public class CobaOperasiString {
     public static void main(String[] args)
     {
-        String identitas = "Muhammad Khoirul Anam / XRPL3 / 25";
-        System.out.println("Identitas : " + identitas);
+        // Intial Commit
+        
+        String identitas = "Muhamamad Khoirul Anam / XRPL3 / 25";
+        System.out.println("Identitas : "+ identitas);
+        
+        
     }
     
 }
