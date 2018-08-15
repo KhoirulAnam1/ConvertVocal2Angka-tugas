@@ -45,9 +45,9 @@ public class ConverVocal2Angka {
         // Tambah Input
         
         private static String vocal2Angka(String kalimat) {
-            char [][] arConvert =
+            char [][] arConvert = 
             {{'a','4'},{'i','1'},{'u','2'},{'e','3'},{'o','0'}};
-             
+            
             kalimat = kalimat.toLowerCase();
             for(int i=0;i<arConvert.length;i++)
                 kalimat = kalimat.replace(arConvert[i][0], arConvert[i][1]);
@@ -57,12 +57,12 @@ public class ConverVocal2Angka {
         
         // Tambah Konversi
         
-        private static void tampil1PerKata(String kalimat, String convert) {
+        private static void tampilPerKata(String kalimat, String convert) {
             String[] arrKal = kalimat.split(" ");
-            String[] arrcon = convert.split(" ");
+            String[] arrCon = convert.split(" ");
             
             for(int i=0;i<arrKal.length;i++)
-                System.out.println("Kalimat Alay Angka : " + convert);
+                System.out.println(arrKal[i]+" => "+arrCon[i]);
         }
         
         // Tambah Tampil Per Kata
@@ -73,14 +73,16 @@ public class ConverVocal2Angka {
         
         // Tambah Tampil Hasil
 
-        private static void tampilPerKata(String kalimat, String convert) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+   
     }
+
+    
+    
         
         
         
 
-}
+
     
     
     
