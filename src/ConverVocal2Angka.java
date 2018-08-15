@@ -31,47 +31,7 @@ public class ConverVocal2Angka {
         tampilPerKata(kalimat, convert);
         tampilHasil(convert);
     }
-    // Initial Commit
     
-    private static String tampilInput() {
-        Scanner scanner = new Scanner(System.in);
-        
-        System.out.println("Masukkan Kalimat: ");
-        String kalimat = scanner.nextLine();
-        System.out.println("Kalimat Asli : " + kalimat);
-        
-        return kalimat;
-    }    
-        // Tambah Input
-        
-        private static String vocal2Angka(String kalimat) {
-            char [][] arConvert = 
-            {{'a','4'},{'i','1'},{'u','2'},{'e','3'},{'o','0'}};
-            
-            kalimat = kalimat.toLowerCase();
-            for(int i=0;i<arConvert.length;i++)
-                kalimat = kalimat.replace(arConvert[i][0], arConvert[i][1]);
-            
-            return kalimat;
-        }
-        
-        // Tambah Konversi
-        
-        private static void tampilPerKata(String kalimat, String convert) {
-            String[] arrKal = kalimat.split(" ");
-            String[] arrCon = convert.split(" ");
-            
-            for(int i=0;i<arrKal.length;i++)
-                System.out.println(arrKal[i]+" => "+arrCon[i]);
-        }
-        
-        // Tambah Tampil Per Kata
-        
-        private static void tampilHasil(String convert) {
-            System.out.println("Kalimat Alay Angka : " + convert);
-        }
-        
-        // Tambah Tampil Hasil
 
    
     }
