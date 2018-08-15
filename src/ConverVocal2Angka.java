@@ -33,6 +33,15 @@ public class ConverVocal2Angka {
     }
     
     
+    private static String tampilInput() {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.println("Masukkan Kalimat: ");
+        String kalimat = scanner.nextLine();
+        System.out.println("Kalimat Asli : " + kalimat);
+        
+        return kalimat;
+    }    
         
         
     }
