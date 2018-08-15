@@ -30,6 +30,16 @@ public class ConverVocal2Angka {
         String convert = vocal2Angka(kalimat);
         tampilPerKata(kalimat, convert);
         tampilHasil(convert);
+        
+         private static String tampilInput() {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.println("Masukkan Kalimat: ");
+        String kalimat = scanner.nextLine();
+        System.out.println("Kalimat Asli : " + kalimat);
+        
+        return kalimat;
+    }    
     }
     
 
